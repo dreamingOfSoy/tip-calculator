@@ -4,7 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Placeholder Text Generator</title>
+
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/uci4rdu.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Tip Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+      <header class="header">
+        <p class="heading">Tip Calculator</p>
+      </header>
+
+      <section class="calc-input">
+        <form>
+          <div class="labels">
+            <label for="bill-amount" class="calc-label">Bill Amount: £</label>
+            <input
+              type="text"
+              class="bill-amount bill-input"
+              placeholder="£"
+              required
+            />
+          </div>
+          <div class="labels">
+            <label for="tip-percent" class="calc-label">Tip Percent: %</label>
+            <input
+              type="text"
+              class="tip-percentage bill-input"
+              placeholder="%"
+            />
+          </div>
+          <div class="labels divide">
+            <label for="divide-by" class="calc-label">Divide By:</label>
+            <span>how many people?</span>
+            <input
+              type="text"
+              class="divide-amount bill-input"
+              placeholder="#"
+            />
+          </div>
+          <div class="labels round">
+            <label for="round-up" class="calc-label">Round Up:</label>
+            <span>to nearest pound</span>
+            <input type="checkbox" class="bill-input check" />
+          </div>
+        </form>
+        <div class="btns">
+          <button class="btn calc-btn">Calculate</button>
+          <button class="btn clear-btn">Clear</button>
+        </div>
+      </section>
+
+      <section class="calc-output">
+        <div class="output">
+          <span>Answer:</span>
+          <div class="answer">
+            <!-- <table class="answer-table">
+              <tr>
+                <th>Tip Total:</th>
+                <th>£ 0</th>
+              </tr>
+
+              <tr>
+                <th>Tip Each Person:</th>
+                <th>£ 0</th>
+              </tr>
+
+              <tr>
+                <th>Total (Bill + Tip):</th>
+                <th>£ 0</th>
+              </tr>
+
+              <tr>
+                <th>Total Each Person:</th>
+                <th>£ 0</th>
+              </tr>
+            </table> -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

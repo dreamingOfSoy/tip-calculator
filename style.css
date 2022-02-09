@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'semplicitapro', serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #170a1c;
+  color: #f6f6f6;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 5rem 0;
+  border: 1px solid #f6f6f6;
+  border-radius: 2rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header {
+  background-color: #f6f6f6;
+  width: 90%;
+  padding: 0.2rem;
+  text-align: center;
+  color: #170a1c;
+  border-radius: 2rem;
+  font-size: 2rem;
+}
+
+.calc-input form {
+  margin-bottom: 4rem;
+
+  display: grid;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.calc-label {
+  font-size: 1.6rem;
+}
+
+.labels {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.labels label {
+  justify-self: end;
+}
+
+.labels input {
+  width: 70%;
+  justify-self: start;
+}
+
+.check {
+  width: 10% !important;
+  justify-self: start !important;
+  align-self: center;
+}
+
+.bill-input {
+  padding: 0.4rem;
+  text-align: center;
+  border-radius: 2rem;
+  border: none;
+}
+
+.round {
+  position: relative;
+}
+
+.round span {
+  position: absolute;
+  left: 7.5rem;
+  bottom: -1.4rem;
+  color: #b8b6b6;
+}
+
+.divide {
+  position: relative;
+}
+
+.divide span {
+  position: absolute;
+  left: 6.5rem;
+  bottom: -1.4rem;
+  color: #b8b6b6;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #b8b6b6;
+}
+
+.calc-output {
+  width: 80%;
+  min-height: 5rem;
+  border: 0.1rem solid #f6f6f6;
+  border-radius: 2rem;
+  padding: 0.8rem;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.output span {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.answer-table {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+  border-spacing: 1rem;
+
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+
+.answer th,
+.answer td {
+  padding: 1rem;
+  border: 0.1rem solid #f6f6f6;
+  border-radius: 2rem;
+}

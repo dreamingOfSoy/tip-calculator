@@ -1,0 +1,43 @@
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Font Family
+Default: Hoss Round
+
+- Font weights
+Default: 400
+Medium: 500
+Bold: 600
+Ultra: 900
+
+- Line heights
+Default: 1
+
+- Letter spacing
+
+--- 02 COLORS
+
+- Primary: 
+#170a1c
+
+- Tints:
+
+- Shades: 
+
+- Accents:
+
+- Greys
+#f6f6f6
+#b8b6b6
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
