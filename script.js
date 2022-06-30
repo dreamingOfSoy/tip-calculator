@@ -50,7 +50,15 @@ function totalPriceEachPerson(tipPerPerson, total, numPeople) {
   return tipPerPerson + totalPerPerson;
 }
 
-function injectAnswers() {
+function injectAnswers(e) {
+  e.preventDefault();
+
+  if (isNaN(billAmountInput.value)) {
+    answerContainer.innerHTML =
+      '<p class="calc-label">Please insert a number!</p>';
+    return;
+  }
+
   const tip = calcTip(+billAmountInput.value, +tipPercentageInput.value);
 
   answerContainer.innerHTML = ` 
@@ -64,7 +72,7 @@ function injectAnswers() {
             divideAmountInput.value === ''
               ? ''
               : `<tr>
-            <th>Tip Each Person:</th>
+            <th>Tip Per Person:</th>
             <th>£ ${
               tipPerPerson >= 1 && check.checked
                 ? Math.round(tipPerPerson)
@@ -84,7 +92,7 @@ function injectAnswers() {
             divideAmountInput.value === ''
               ? ''
               : `<tr>
-            <th>Total Each Person:</th>
+            <th>Total Per Person:</th>
             <th>£ ${
               check.checked
                 ? Math.round(totalEachPerson)

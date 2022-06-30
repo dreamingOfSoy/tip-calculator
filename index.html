@@ -23,6 +23,7 @@
           <div class="labels">
             <label for="bill-amount" class="calc-label">Bill Amount: £</label>
             <input
+              name="bill-amount"
               type="text"
               class="bill-amount bill-input"
               placeholder="£"
@@ -32,6 +33,7 @@
           <div class="labels">
             <label for="tip-percent" class="calc-label">Tip Percent: %</label>
             <input
+              name="tip-percent"
               type="text"
               class="tip-percentage bill-input"
               placeholder="%"
@@ -41,6 +43,7 @@
             <label for="divide-by" class="calc-label">Divide By:</label>
             <span>how many people?</span>
             <input
+              name="divide-by"
               type="text"
               class="divide-amount bill-input"
               placeholder="#"
@@ -51,11 +54,13 @@
             <span>to nearest pound</span>
             <input type="checkbox" class="bill-input check" />
           </div>
+          <div class="btns">
+            <button type="submit" value="calculate" class="btn calc-btn">
+              Calculate
+            </button>
+            <button class="btn clear-btn">Clear</button>
+          </div>
         </form>
-        <div class="btns">
-          <button class="btn calc-btn">Calculate</button>
-          <button class="btn clear-btn">Clear</button>
-        </div>
       </section>
 
       <section class="calc-output">
